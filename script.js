@@ -33,23 +33,16 @@ function changeGrid(){
 }
 
 function buildGrid(value){
+    let percentage = 100/value;
     for(j = 0; j < value; j++){
         for(i = 0; i < value; i++){
-            console.log(i);
-            let row = document.createElement('div');
-            row.classList.add('cell');
-            content.appendChild(row);
+            let cell = document.createElement('div');
+            cell.classList.add('cell');
+            content.appendChild(cell);
+            cell.setAttribute('style', `width: ${percentage}%; height: ${percentage}%;`);
+
         }
-    }
-
-    let percentage = 100/value;
-
-    let allCells = document.querySelectorAll('.cell');
-    allCells.forEach((cell) => {
-        cell.setAttribute('style', `width: ${percentage}%; height: ${percentage}%; background-color: ${random_rgba()}`);
-    })
-
-
+    }   
 }
 
 let buttino = document.querySelector('button');

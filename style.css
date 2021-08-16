@@ -4,15 +4,16 @@ html, body{
 }
 
 .container{
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
+    border-color: black;
+    border-style: groove;
 }
 
 .cell{
     float: left;
-    border-color: black;
     width: 6.25%;
     height: 6.25%;
 }
@@ -24,4 +25,8 @@ html, body{
 
 nav{
     text-align: center;
+}
+
+.spacelol{
+    height: 20px;
 }
