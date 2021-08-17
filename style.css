@@ -1,15 +1,17 @@
 html, body{
     margin: 0;
     height: 100%;
+    background-color: #532680;
 }
 
 .container{
-    height: 80%;
-    width: 80%;
+    height: 70%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     border-color: black;
-    border-style: groove;
+    border-style: outset;
+    background-color: #f7f7f7;
 }
 
 .cell{
@@ -23,10 +25,21 @@ html, body{
     background-color: blue;
 }*/
 
-nav{
-    text-align: center;
+.spacelol{
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.spacelol{
-    height: 20px;
+#coolbutton{
+    width: 10%;
+    height: 40%;
+    background-color:#d70873;
+    border-color: #cc3232;
+    color:rgb(255, 255, 255);
+    text-align:center;
+    text-decoration:tomato;
+    font-size: large;
+    border-radius: 25px;
 }
