@@ -35,7 +35,7 @@ let buttino = document.querySelector('button');
 buttino.addEventListener("click", () => {
     value = prompt("Choose a number, preferably less than 100");
     while(value >= 60 || value == null || value < 0){
-        prompt("LMAO");
+        value = prompt("LMAO");
     }
 
     nbyf.textContent = value + " X " + value;
